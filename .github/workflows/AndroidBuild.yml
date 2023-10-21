@@ -1,0 +1,13 @@
+name: AndroidBuild
+on:
+  pull_request :
+    branches : [master]
+  push :
+    branches : [master]
+
+jobs:
+  build:
+    rund-on : ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.0
